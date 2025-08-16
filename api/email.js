@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     const result = await resend.emails.send({
       from: process.env.EMAIL_FROM || "Notes Bot <no-reply@example.com>",
       to: recipients,
-      subject: subject || "Meeting Summary",
+      subject: subject || " Summary",
       text: body,
     });
 
